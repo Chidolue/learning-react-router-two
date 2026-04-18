@@ -6,6 +6,9 @@ import HomePage from './pages/HomePage.jsx';
 import ProfilesPage from './pages/ProfilesPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 
+import "./App.css";
+import ProfilePage from './pages/ProfilePage.jsx';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,6 +19,11 @@ const router = createBrowserRouter([
   {
     path: '/profiles',
     element: <ProfilesPage />
+  },
+  
+  {
+    path: '/profiles/:profileId',
+    element: <ProfilePage />
   }
 ]);
 
